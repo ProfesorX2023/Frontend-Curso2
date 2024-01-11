@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dimensiones en CSS</title>
+    <style>
+        html, body{
+            height: 100%; /* le decimos que tanto como la raiz deben ocupar el 100% de la altura total de la ventana del navegador*/
+        }
+        body{
+            font-family: arial, sans-serif;
+            font-size: 1.25rem;
+        }
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        header{
+            background-color: #FFFF00;
+            width: 100%; /*% son relativos*/
+            height: 15%; /*No se aplicará pues primero hay que crear una regla que afecte al elemento raiz*/
+            max-width: 1366px;
+            min-height: 92px;
+            max-height: 30px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <p>Esto es una cabecera</p>
+    </header>
+</body>
+</html>

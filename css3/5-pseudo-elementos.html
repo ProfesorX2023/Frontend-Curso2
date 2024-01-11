@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pseudo Elementos en CSS</title>
+    <style>
+        /* Pseudo-elemento ::first-letter*/
+        #primeraLetra::first-letter{
+            color: red;
+            font-size: 30px;
+        }
+
+        /* Pseudo-elemento ::first-line*/
+
+        #primeraLinea::first-line{
+            color: blue;
+
+        }
+        /* Pseudo-elementos ::Before y ::after*/
+        .error::before{
+            content: url(/images/error.png);
+            vertical-align: middle;
+            padding-right: 20px;
+        }
+
+        .error span::after{
+            content: "ATENCIÓN: ";
+            color: red;
+            font-size: 20px;
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+    <h1>Pseudo-elementos en CSS</h1>
+    <p id="primeraLetra">Lorem ipsum dolor sit amet consectetur adipisicing elit. Inventore
+    placeat nemo delectus numquam voluptas cumque excepturi quibusdam neque.
+    Consequuntur minus illo ipsam architecto doloribus voluptates corporis
+    officiis eveniet vero nemo!</p>
+    <p id="primeraLinea">Corporis voluptatibus, debitis, aliquid optio, ex natus mollitia at non
+    corrupti ullam ab sint. Iste dolores itaque error consectetur perspiciatis,
+    minus magnam expedita, reprehenderit saepe perferendis fuga nostrum quas
+    facere?</p>
+    <p class="error"><span></span>Voluptatibus vero soluta sed eum mollitia deleniti, modi fuga harum fugit
+    quaerat officia ullam cum officiis quibusdam inventore, nostrum facilis
+    ducimus praesentium nemo laborum. Corporis atque assumenda nemo quas ab.</p>
+    <p>Voluptates natus labore dolores esse nostrum nam ad assumenda voluptas
+    possimus eius? Deserunt velit accusantium voluptate, laboriosam, fuga
+    itaque, molestias reiciendis ea fugiat totam earum tempora recusandae et
+    cupiditate aliquid!</p>
+    <p class="error"><span></span>Nesciunt rem dignissimos odit, molestias quae nulla. Voluptatem, corrupti
+    nulla, aut obcaecati incidunt dignissimos commodi nisi reprehenderit veniam,
+    cumque non facere officia ratione hic dicta in aliquid. Sequi, quisquam
+    exercitationem?</p>
+</body>
+</html>
