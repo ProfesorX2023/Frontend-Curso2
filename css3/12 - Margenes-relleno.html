@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Márgenes y Relleno</title>
+    <style>
+        html, body{
+            height: 100%; /* le decimos que tanto como la raiz deben ocupar el 100% de la altura total de la ventana del navegador*/
+        }
+        body{
+            font-family: arial, sans-serif;
+            font-size: 1.25rem;
+        }
+
+        div{
+            border: 1px solid;
+        }
+
+        /* ¿Cómo aplicar márgenes a elementos de HTML */
+        /* #texto-con-margenes{
+            margin-top: 3em; 
+            margin-top: -1.5em;
+            margin-bottom: 3em;
+            margin-right: 12em;
+            margin-left: 10em; 
+            
+              }*/
+
+        /* Propiedad de atajo */
+
+        #texto-con-margenes{
+            margin: 5em 2em 8em 3em;
+            padding: 3.5em 2em 1.8em 5em;
+        }
+
+        /* Centrar elementos HTML */
+        #centrar{
+            width: 400px;
+            height: 400px;
+            background-color: #00FF00;
+            color: #fff;
+            margin: auto;
+        }
+    </style>
+</head>
+<body>
+    <h1>Márgenes y Relleno en CSS</h1>
+    <div>
+        <h2>Texto sin márgenes</h2>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellendus doloribus, modi cupiditate odio ut deleniti id aspernatur vero veniam esse laboriosam rem, eligendi pariatur molestias, itaque impedit? Aut, incidunt eligendi?</p>
+    </div>
+    <div id="texto-con-margenes">
+        <h2>Texto con márgenes y padding</h2>
+        <p>Repellat quas, sit odio harum architecto perspiciatis cupiditate. Illo nostrum facere eaque. Vitae delectus porro in fugit voluptas, rem libero odit necessitatibus eum quos. Dicta sit ipsam magni atque fugiat.</p>
+    </div>
+    <div>
+        <h2>Texto sin márgenes</h2>
+        <p>Et nesciunt quaerat velit aspernatur? Quae illum officiis totam iusto cum unde! Earum, nostrum molestiae repellat obcaecati veniam ad fugit reprehenderit corrupti tempore placeat. Nulla magni sit architecto quo ipsum.</p>
+    </div>
+    <div id="centrar">
+        <h2>Centrar Elementos</h2>
+    </div>
+</body>
+</html>
