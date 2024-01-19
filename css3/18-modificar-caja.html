@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Elementos Flotantes HTML</title>
+    <style>
+        html{
+            box-sizing: border-box;
+        }
+
+        *, *::before, *::after{
+            box-sizing: border-box;
+        }
+        html, body{
+            height: 100%;
+        }
+
+        body{
+            font-family: arial, sans-serif;
+            font-size: 1.125rem;
+        }
+
+
+        /* Crear contenido en columnas */
+        .caja{
+            /* width: 33.33%; */
+            width: 424px;
+            float: left;
+            margin: 0px 10px;
+            border: 1px solid;
+            padding: 5px 12px;
+            /* margin-right: 10px;
+            border: 1px solid;
+            padding: 5px 12px; */
+ 
+        }
+
+        img{
+            width: 100%;
+        }
+    </style>
+</head>
+<body>
+    <h1>¿Cómo modificar el modelo de cajas tradicional?</h1>
+
+    <h2>Contenido en Columnas</h2>
+    <div class="caja">
+        <h2>¿Cómo adiestrar a tu perro?</h2>
+        <img src="images/puppy-1207816_1280.jpg" alt="carretera">            
+        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eum quibusdam ea quo adipisci reprehenderit, sequi nobis repellendus, quasi repellat quas cumque! Mollitia reprehenderit minus autem nemo necessitatibus aspernatur quaerat qui.</p>
+        <a href="#">Leer más...</a>
+    </div>
+    <div class="caja">
+        <h2>¿Cómo adiestrar a tu perro?</h2>
+        <img src="images/puppy-1207816_1280.jpg" alt="carretera">        
+        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eum quibusdam ea quo adipisci reprehenderit, sequi nobis repellendus, quasi repellat quas cumque! Mollitia reprehenderit minus autem nemo necessitatibus aspernatur quaerat qui.</p>
+        <a href="#">Leer más...</a>
+    </div>
+    <div class="caja">
+        <h2>¿Cómo adiestrar a tu perro?</h2>        
+        <img src="images/puppy-1207816_1280.jpg" alt="carretera">
+        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eum quibusdam ea quo adipisci reprehenderit, sequi nobis repellendus, quasi repellat quas cumque! Mollitia reprehenderit minus autem nemo necessitatibus aspernatur quaerat qui.</p>
+        <a href="#">Leer más...</a>
+    </div>
+</body>
+</html>
